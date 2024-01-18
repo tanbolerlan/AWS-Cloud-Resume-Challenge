@@ -1,4 +1,4 @@
-# Cloud Resume Challenge - AWS Static Website with Visitor Counter
+# Cloud Resume Challenge - AWS Static Website with Visitor Counter - Front-end CI/CD pipeline
 
 ## Project Overview
 
@@ -7,6 +7,7 @@ This project is a part of the AWS Cloud Resume Challenge, where I have created a
 ## Technologies Used
 
 - **AWS Services:**
+
   - Amazon S3: Hosting the static website files.
   - Amazon CloudFront: CDN (Content Delivery Network) for fast and secure content delivery.
   - AWS WAF: Web Application Firewall for protection against common web exploits.
@@ -24,15 +25,19 @@ This project is a part of the AWS Cloud Resume Challenge, where I have created a
 The project consists of the following components:
 
 1. **Static Website Files:**
+
    - The HTML, CSS, and JavaScript files for the static website are stored in an Amazon S3 bucket.
 
 2. **Visitor Counter Logic:**
+
    - The visitor counter functionality is implemented using JavaScript on the client side. This script sends requests to the backend API (Python Lambda functions) to update and retrieve the visitor count.
 
 3. **Backend Lambda Functions (Python):**
+
    - AWS Lambda functions written in Python are used to handle HTTP requests from the static website. These functions interact with DynamoDB to update and retrieve the visitor count.
 
 4. **DynamoDB Database:**
+
    - A DynamoDB table is used to store the visitor count data. Each visitor is tracked with a unique identifier.
 
 5. **Website Pages:**
@@ -41,21 +46,27 @@ The project consists of the following components:
 ## Setup Instructions
 
 1. **AWS Account Setup:**
+
    - Make sure you have an AWS account with the necessary permissions to create and manage resources like S3, CloudFront, Lambda, DynamoDB, WAF, and Route 53.
 
 2. **Configure AWS CLI:**
+
    - Set up the AWS CLI on your local machine with the necessary credentials.
 
 3. **Deploying the Infrastructure:**
+
    - Use the provided CloudFormation templates (if any) to deploy the required AWS resources.
 
 4. **Static Website Deployment:**
+
    - Upload the static website files to the S3 bucket.
 
 5. **Lambda Function Deployment:**
+
    - Deploy the Lambda functions (written in Python) and set up the API Gateway to expose the HTTP API.
 
 6. **DynamoDB Setup:**
+
    - Create a DynamoDB table to store the visitor count data.
 
 7. **Testing:**
@@ -64,9 +75,11 @@ The project consists of the following components:
 ## Additional Notes
 
 - **Security:**
+
   - Ensure that appropriate security measures are in place, especially with regards to AWS WAF configurations and Lambda function permissions.
 
 - **Monitoring:**
+
   - Set up CloudWatch Alarms and Logging to monitor the health and performance of your AWS resources.
 
 - **Scalability:**
