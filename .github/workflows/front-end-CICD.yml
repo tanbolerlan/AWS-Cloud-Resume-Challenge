@@ -16,6 +16,6 @@ jobs:
         env:
           AWS_REGION: "eu-north-1"
           SOURCE_DIR: "Cloud_Resume_Challenge_AWS"
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: "AKIAWQZJPYAPXUDQREJD"
+          AWS_SECRET_ACCESS_KEY: "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"
           AWS_S3_BUCKET: "tanbol.click"
