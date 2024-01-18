@@ -15,7 +15,7 @@ jobs:
           args: --acl public-read --follow-symlinks --delete
         env:
           AWS_REGION: "eu-north-1"
-          SOURCE_DIR: "Cloud_Resume_Challenge_AWS"
+          SOURCE_DIR: "public"
           AWS_ACCESS_KEY_ID: "AKIAWQZJPYAPXUDQREJD"
           AWS_SECRET_ACCESS_KEY: "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"
           AWS_S3_BUCKET: "tanbol.click"
